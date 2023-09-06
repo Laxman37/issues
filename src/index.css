@@ -1,13 +1,141 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  /* Set your desired font family */
+  font-family: Arial, sans-serif;
+  font-size: 1rem; /* 16px */
+  /* Set your desired line height according font-size */
+  line-height: 1.6;
+  background-color: #f0f0f0; /* Set your desired background color */
+  color: #333;
+  /* Remove default padding */
+  margin: 0;
+  padding: 0;
+  user-select: none; /* user text selection remove default*/
+}
+
+button {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* container */
+
+.container {
+  max-width: 120rem; /* 1920px */
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 0 1.5rem;
+}
+
+/* Typography  */
+
+/*  for example, h1=>heading primary 
+ h2=>heading secondary 
+ h3=>heading tertiary */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  letter-spacing: -0.5px;
+  color: #333;
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 2rem;
+  line-height: 1.05;
+  /* margin-bottom: 1rem; */
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  /* margin-bottom: 2rem; */
+}
+
+.heading-tertiary {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  /* margin-bottom: 3.2rem; */
+}
+
+.subheading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* color: #e67e22; */
+  /* text-transform: uppercase; */
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+/* global media Query */
+@media (max-width: 991px) {
+  /* dekstop */
+}
+@media (max-width: 767px) {
+  /* tablet */
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* mobile */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* tab supportivee */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* mac suupoetive */
+}
+@media (min-width: 768px) {
+  /* tab */
+}
+@media (min-width: 1200px) {
+  /* dekstop */
+}
+@media (min-width: 1400px) {
+  /* dekstop */
+}
+@media (min-width: 1600px) {
+  /* large dekstop */
+}
+
+/* CSS */
+:where(
+    .css-dev-only-do-not-override-nnuwmp
+  ).ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background-color: #216375 !important;
+}
+
+:where(.css-dev-only-do-not-override-nnuwmp).ant-switch.ant-switch-checked {
+  background-color: #216375;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  width: 2px; /* Width of the vertical scrollbar */
+  height: 8px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #e8e8e8; /* Track color */
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #b7d0d5; /* Thumb color */
+  border-radius: 5px; /* Round corners */
+  padding: 5px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #57919e; /* Thumb color on hover */
 }

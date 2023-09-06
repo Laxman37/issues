@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import DevicesCard from "./Component/DevicesCount/DevicesCard";
+import TimePickerComponent from "./Component/TimePicker";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="d-flex horizontal-scroll" style={{overflowX: "auto", whiteSpace: "nowrap" }}>
+
+      {/* your app App */} <DevicesCard /> <DevicesCard />
+      <DevicesCard />
+      <DevicesCard />
+      <DevicesCard />
+      <DevicesCard />
+      <DevicesCard />
+      <DevicesCard />
+      </div>
     </div>
   );
 }
-
-export default App;
